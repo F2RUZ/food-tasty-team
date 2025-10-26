@@ -97,4 +97,109 @@
   .navbar__toggle {
     display: flex;
   }
+}
+
+.intro {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.intro__container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.intro__content {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.intro__title {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.intro__title span {
+  color: #38bdf8;
+}
+@media (max-width: 768px) {
+  .intro__title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+.intro__text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+@media (max-width: 768px) {
+  .intro__text {
+    text-align: center;
+  }
+}
+.intro__buttons {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .intro__buttons {
+    justify-content: center;
+  }
+}
+.intro__btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+.intro__btn--primary {
+  background: #38bdf8;
+  color: #0f172a;
+}
+.intro__btn--primary:hover {
+  background: #0ea5e9;
+}
+.intro__btn--secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+.intro__btn--secondary:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+.intro__image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+.intro__image img {
+  width: 100%;
+  max-width: 500px;
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
